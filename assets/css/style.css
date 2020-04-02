@@ -69,54 +69,53 @@ footer div .footer__link {
   padding: 15px;
 }
 .link__menu .menu h1 {
-  text-transform: uppercase;
-  font-size: 2.4em;
+  font-size: 2em;
 }
 .link__menu .menu .img_note {
   width: 80;
   margin-top: -4em;
 }
 
-.title_enchantee {
+.menu__title-1 {
   margin-top: 0;
-  font-size: 2.6em;
+  font-size: 2.4em;
   font-weight: 400;
   font-family: "Devonshire", cursive;
+  color: #3d1319;
 }
 
-.menu_enchantee {
+.menu__subtitle-1 {
   font-weight: 400;
   font-style: italic;
   font-family: "Itim", cursive;
+  color: #3d1319;
 }
 
-.title_chic {
-  font-size: 2.3em;
+.menu__title-2 {
+  font-size: 2em;
   font-family: "Kurale", serif;
 }
 
-.menu_chic {
+.menu__subtitle-2 {
   font-family: "Source Serif Pro", serif;
 }
 
-.title_papilles {
-  font-size: 2.3em;
+.menu__title-3 {
+  font-size: 2em;
   font-family: "Dancing Script", cursive;
 }
 
-.menu_papilles {
-  font-style: italic;
+.menu__subtitle-3 {
   font-family: "Caveat", cursive;
 }
 
-.title_gout {
-  font-weight: 600;
-  font-size: 2.3em;
+.menu__title-4 {
+  font-weight: 500;
+  font-size: 2em;
   font-family: "Kaushan Script", cursive;
 }
 
-.menu_gout {
-  font-style: italic;
+.menu__subtitle-4 {
   font-family: "Caveat", cursive;
 }
 

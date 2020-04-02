@@ -14,12 +14,8 @@
         border-radius: 3px;
         padding: 15px;
 
-        // h2 {
-        //     font-size: 2.4em;
-        // }
         h1 {
-            text-transform: uppercase;
-            font-size: 2.4em;
+            font-size: 2em;
         }
         .img_note {
             width: 80;
@@ -28,43 +24,45 @@
     }
 }
 
-// Add font on menu titles
-.title_enchantee {
+// Menu titles
+.menu__title-1 {
     margin-top: 0;
-    font-size: 2.6em;
+    font-size: 2.4em;
     font-weight: 400;
     font-family: $font_title_enchantee;
+    color: $color-menu-1;
 }
-.menu_enchantee {
+.menu__subtitle-1 {
     font-weight: 400;
     font-style: italic;
     font-family: $font_menu_enchantee;
+    color: $color-menu-1;
 }
 
-.title_chic {
+.menu__title-2 {
     font-size: $font_size_title;
     font-family: $font_title_francaise;
 }
-.menu_chic {
+.menu__subtitle-2 {
     font-family: $font_menu_francaise;
 }
 
-.title_papilles {
+.menu__title-3 {
     font-size: $font_size_title;
     font-family: $font_title_papilles;
 }
-.menu_papilles {
-    font-style: italic;
+.menu__subtitle-3 {
+    // font-style: italic;
     font-family: $font_menu_papilles;
 }
 
-.title_gout {
-    font-weight: 600;
+.menu__title-4 {
+    font-weight: 500;
     font-size: $font_size_title;
     font-family: $font_title_gout;
 }
-.menu_gout {
-    font-style: italic;
+.menu__subtitle-4 {
+    // font-style: italic;
     font-family: $font_menu_gout;
 }
 
