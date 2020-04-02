@@ -143,10 +143,22 @@ footer div .footer__link {
 }
 
 #soon {
+  margin-top: 30px;
   display: flex;
-  height: 7%;
+}
+#soon #soon__box {
+  width: 14%;
+  margin: auto;
+  color: #fcca46;
+  background-color: #569b87;
+  border-radius: 5px;
+  font-size: 21px;
+  font-family: "Nunito", sans-serif;
   justify-content: center;
-  align-content: center;
+  text-align: center;
+}
+#soon #soon__box p {
+  margin: 10px;
 }
 
 body {
