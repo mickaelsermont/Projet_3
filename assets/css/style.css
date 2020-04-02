@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Devonshire&family=Itim&family=Kaushan+Script&family=Kurale&family=Nunito&family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Devonshire&family=Itim&family=Kaushan+Script&family=Kurale&family=Nunito&family=Source+Serif+Pro&display=swap");
+@font-face {
+  font-family: "PeacerfulDay";
+  src: url("../../assets/fonts/PeacerfulDay.woff2") format("woff2"), url("../../assets/fonts/PeacerfulDay.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /*
 font-family: 'Nunito', sans-serif;
 font-family: 'Devonshire', cursive;
 font-family: 'Itim', cursive;
 font-family: 'Kurale', serif;
 font-family: 'Source Serif Pro', serif;
-font-family: 'Caveat', cursive;
 font-family: 'Dancing Script', cursive;
 font-family: 'Kaushan Script', cursive;
 */
@@ -64,18 +69,22 @@ footer div .footer__link {
   align-items: center;
   text-align: center;
   height: 95%;
-  border: 1px solid #000;
   border-radius: 3px;
   padding: 15px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.55);
 }
 .link__menu .menu h1 {
-  font-size: 2em;
+  font-size: 2.1em;
 }
 .link__menu .menu .img_note {
   width: 80;
   margin-top: -4em;
 }
+.link__menu .menu-1 {
+  background-color: #fcdfdb;
+}
 
+/* ------ Menu titles ------- */
 .menu__title-1 {
   margin-top: 0;
   font-size: 2.4em;
@@ -94,29 +103,43 @@ footer div .footer__link {
 .menu__title-2 {
   font-size: 2em;
   font-family: "Kurale", serif;
+  background: -webkit-linear-gradient(-45deg, #c77412 10%, #a6669a 60%, #6b30eb 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu__subtitle-2 {
   font-family: "Source Serif Pro", serif;
+  color: #c77412;
 }
 
 .menu__title-3 {
   font-size: 2em;
   font-family: "Dancing Script", cursive;
+  background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu__subtitle-3 {
-  font-family: "Caveat", cursive;
+  font-style: italic;
+  font-family: "PeacerfulDay";
+  color: #0887fb;
 }
 
 .menu__title-4 {
   font-weight: 500;
   font-size: 2em;
   font-family: "Kaushan Script", cursive;
+  background: -webkit-linear-gradient(-45deg, #55924d 10%, #84cd60 60%, #beff7f 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu__subtitle-4 {
-  font-family: "Caveat", cursive;
+  font-style: italic;
+  font-family: "PeacerfulDay";
+  color: #72bf56;
 }
 
 #soon {

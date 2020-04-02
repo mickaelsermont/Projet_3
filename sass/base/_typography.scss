@@ -1,5 +1,13 @@
 // import fonts from google fonts
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Devonshire&family=Itim&family=Kaushan+Script&family=Kurale&family=Nunito&family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Devonshire&family=Itim&family=Kaushan+Script&family=Kurale&family=Nunito&family=Source+Serif+Pro&display=swap');
+
+@font-face {
+    font-family: 'PeacerfulDay';
+    src: url('../../assets/fonts/PeacerfulDay.woff2') format('woff2'),
+        url('../../assets/fonts/PeacerfulDay.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*
 font-family: 'Nunito', sans-serif;
@@ -7,7 +15,6 @@ font-family: 'Devonshire', cursive;
 font-family: 'Itim', cursive;
 font-family: 'Kurale', serif;
 font-family: 'Source Serif Pro', serif;
-font-family: 'Caveat', cursive;
 font-family: 'Dancing Script', cursive;
 font-family: 'Kaushan Script', cursive;
 */
@@ -25,10 +32,10 @@ $font_menu_francaise: 'Source Serif Pro', serif;
 
 
 $font_title_papilles: 'Dancing Script', cursive;
-$font_menu_papilles: 'Caveat', cursive;
+$font_menu_papilles: 'PeacerfulDay';
 
 
 $font_title_gout: 'Kaushan Script', cursive;
-$font_menu_gout: 'Caveat', cursive;
+$font_menu_gout: 'PeacerfulDay';
 
 $font_link_footer: 'Nunito', sans-serif;

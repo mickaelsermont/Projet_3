@@ -10,21 +10,27 @@
         text-align: center;
 
         height: 95%;
-        border: 1px solid #000;
         border-radius: 3px;
         padding: 15px;
+        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.55);
 
         h1 {
-            font-size: 2em;
+            font-size: 2.1em;
         }
         .img_note {
             width: 80;
             margin-top: -4em;
         }
     }
+
+    .menu-1 {
+        background-color: #fcdfdb;
+    }
 }
 
-// Menu titles
+/* ------ Menu titles ------- */
+
+// Menu "La note enchantée"
 .menu__title-1 {
     margin-top: 0;
     font-size: 2.4em;
@@ -39,31 +45,49 @@
     color: $color-menu-1;
 }
 
+// Menu "Le chic à la française"
 .menu__title-2 {
     font-size: $font_size_title;
     font-family: $font_title_francaise;
+
+    background: -webkit-linear-gradient(-45deg, #c77412 10%, #a6669a 60%, #6b30eb 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .menu__subtitle-2 {
     font-family: $font_menu_francaise;
+    color: $color-menu-2;
 }
 
+// Menu "Le délice des papilles"
 .menu__title-3 {
     font-size: $font_size_title;
     font-family: $font_title_papilles;
+
+    background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .menu__subtitle-3 {
-    // font-style: italic;
+    font-style: italic;
     font-family: $font_menu_papilles;
+    color: $color-menu-3;
 }
 
+// Menu "La palette du gout"
 .menu__title-4 {
     font-weight: 500;
     font-size: $font_size_title;
     font-family: $font_title_gout;
+
+    background: -webkit-linear-gradient(-45deg, #55924d 10%, #84cd60 60%, #beff7f 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .menu__subtitle-4 {
-    // font-style: italic;
+    font-style: italic;
     font-family: $font_menu_gout;
+    color: $color-menu-4;
 }
 
 // Section Prochainement
