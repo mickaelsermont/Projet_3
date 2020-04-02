@@ -1,0 +1,26 @@
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primaryColor;
+    height: 8%;
+
+    div {
+        padding: 0 30px;
+
+        .footer__link {
+            font-size: 19px;
+            font-weight: 700;
+            font-family: $font_link_footer;
+            text-decoration: none;
+            color: $secondaryColor;
+        }
+    }
+
+    
+}

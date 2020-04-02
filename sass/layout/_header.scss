@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #569b87;
+    height: 10%;
+
+    .header__link {
+        text-decoration: none;
+
+        img {
+            width: 250px;
+        }
+    }
+}

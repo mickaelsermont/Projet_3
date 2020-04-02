@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Devonshire&family=Itim&family=Kaushan+Script&family=Kurale&family=Nunito&family=Source+Serif+Pro&display=swap");
+/*
+font-family: 'Nunito', sans-serif;
+font-family: 'Devonshire', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Kurale', serif;
+font-family: 'Source Serif Pro', serif;
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Kaushan Script', cursive;
+*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #569b87;
+  height: 10%;
+}
+header .header__link {
+  text-decoration: none;
+}
+header .header__link img {
+  width: 250px;
+}
+
+#main_container {
+  margin: 20px 30px;
+  min-height: 65%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #569b87;
+  height: 8%;
+}
+footer div {
+  padding: 0 30px;
+}
+footer div .footer__link {
+  font-size: 19px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: #fcca46;
+}
+
+.link__menu {
+  text-decoration: none;
+}
+.link__menu .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 95%;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 15px;
+}
+.link__menu .menu h1 {
+  text-transform: uppercase;
+  font-size: 2.4em;
+}
+.link__menu .menu .img_note {
+  width: 80;
+  margin-top: -4em;
+}
+
+.title_enchantee {
+  margin-top: 0;
+  font-size: 2.6em;
+  font-weight: 400;
+  font-family: "Devonshire", cursive;
+}
+
+.menu_enchantee {
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Itim", cursive;
+}
+
+.title_chic {
+  font-size: 2.3em;
+  font-family: "Kurale", serif;
+}
+
+.menu_chic {
+  font-family: "Source Serif Pro", serif;
+}
+
+.title_papilles {
+  font-size: 2.3em;
+  font-family: "Dancing Script", cursive;
+}
+
+.menu_papilles {
+  font-style: italic;
+  font-family: "Caveat", cursive;
+}
+
+.title_gout {
+  font-weight: 600;
+  font-size: 2.3em;
+  font-family: "Kaushan Script", cursive;
+}
+
+.menu_gout {
+  font-style: italic;
+  font-family: "Caveat", cursive;
+}
+
+#soon {
+  display: flex;
+  height: 7%;
+  justify-content: center;
+  align-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
