@@ -1,6 +1,7 @@
 // Section Menu
 .link__menu {
     text-decoration: none;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.55);
 
     .menu {
         display: flex;
@@ -10,9 +11,9 @@
         text-align: center;
 
         height: 95%;
-        border-radius: 3px;
         padding: 15px;
-        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.55);
+        border-radius: 3px;
+        background-color: transparent;
 
         h1 {
             font-size: 2.1em;
@@ -21,11 +22,16 @@
             width: 80;
             margin-top: -4em;
         }
-    }
 
-    .menu-1 {
-        background-color: #fcdfdb;
+        transform: scale(1);
+        transition: transform 400ms;
+        &:hover {
+            transform: scale(1.15);
+        }
     }
+}
+.bgc-menu-1 {
+    background: #fcdfdb;
 }
 
 /* ------ Menu titles ------- */
