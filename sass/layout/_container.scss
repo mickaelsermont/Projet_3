@@ -4,7 +4,7 @@
     min-height: 65%;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     grid-gap: 1rem;
 }
 
@@ -14,4 +14,12 @@
     flex-direction: column;
     width: 65%;
     margin: auto;
+
+    // Media queries
+    @media screen and (max-width: $breakpoint_desktop) {
+        width: 85%;
+    }
+    @media screen and (max-width: $breakpoint_tablets) {
+        width: 90%;
+    }
 }

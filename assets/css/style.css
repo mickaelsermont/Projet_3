@@ -37,7 +37,7 @@ header .header__link img {
   margin: 20px 30px;
   min-height: 65%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   grid-gap: 1rem;
 }
 
@@ -46,6 +46,16 @@ header .header__link img {
   flex-direction: column;
   width: 65%;
   margin: auto;
+}
+@media screen and (max-width: 1250px) {
+  #menu_container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 770px) {
+  #menu_container {
+    width: 90%;
+  }
 }
 
 footer {
@@ -72,12 +82,13 @@ footer div .footer__link {
 }
 
 .container__title {
+  margin: 1.8em 0 1em;
   font-family: Helvetica, sans-serif;
   text-align: center;
 }
 
 .menu__card {
-  padding: 1em 6em 4em 6em;
+  padding: 4em 6em;
   margin-bottom: 10%;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.55);
   text-align: center;
@@ -106,6 +117,11 @@ footer div .footer__link {
 .menu__card .card__line .line__price {
   font-weight: 600;
 }
+@media screen and (max-width: 1250px) {
+  .menu__card {
+    padding: 1em 2em 4em;
+  }
+}
 
 .link__menu {
   text-decoration: none;
@@ -117,6 +133,7 @@ footer div .footer__link {
   justify-content: center;
   align-items: center;
   text-align: center;
+  min-height: 500px;
   height: 95%;
   padding: 15px;
   border-radius: 3px;
@@ -154,14 +171,14 @@ footer div .footer__link {
 .menu__title-2 {
   font-size: 2em;
   font-family: "Kurale", serif;
-  background: -webkit-linear-gradient(-45deg, #c77412 10%, #a6669a 60%, #6b30eb 80%);
+  background: -webkit-linear-gradient(-45deg, #c67412 10%, #a56799 60%, #6b30eb 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .menu__subtitle-2 {
   font-family: "Source Serif Pro", serif;
-  color: #c77412;
+  color: #c67412;
 }
 
 .menu__title-3 {
@@ -228,10 +245,29 @@ footer div .footer__link {
   font-family: "Devonshire", cursive;
 }
 .card__m1 .card__line .line__description {
-  font-size: 1.3rem;
+  text-align: start;
+  font-size: 1.5rem;
 }
 .card__m1 .card__line .line__price {
-  font-size: 1.3rem;
+  margin-left: 30px;
+  font-size: 1.5rem;
+}
+.card__m1 .card__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+.card__m1 .card__footer .footer__img {
+  width: 60px;
+  height: 60px;
+}
+.card__m1 .card__footer .footer__title {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 2.2rem;
+  font-family: "Devonshire", cursive;
 }
 
 .card__m2 {
@@ -250,10 +286,10 @@ footer div .footer__link {
   font-family: "Devonshire", cursive;
 }
 .card__m2 .card__line .line__description {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .card__m2 .card__line .line__price {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .card__m3 {
@@ -272,10 +308,10 @@ footer div .footer__link {
   font-family: "Devonshire", cursive;
 }
 .card__m3 .card__line .line__description {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .card__m3 .card__line .line__price {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .card__m4 {
@@ -294,10 +330,10 @@ footer div .footer__link {
   font-family: "Devonshire", cursive;
 }
 .card__m4 .card__line .line__description {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .card__m4 .card__line .line__price {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 body {

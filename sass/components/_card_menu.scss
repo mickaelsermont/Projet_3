@@ -1,13 +1,14 @@
 
 // Title before card menu
 .container__title {
+    margin: 1.8em 0 1em;
     font-family: Helvetica, sans-serif;
     text-align: center;
 }
 
 // card menu
 .menu__card {
-    padding: 1em 6em 4em 6em;
+    padding: 4em 6em;
     margin-bottom: 10%;
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.55);
     text-align: center;
@@ -37,5 +38,10 @@
         .line__price {
             font-weight: 600;
         }
+    }
+
+    // Media queries
+    @media screen and (max-width: $breakpoint_desktop) {
+        padding: 1em 2em 4em;
     }
 }

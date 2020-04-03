@@ -2,10 +2,21 @@ $primaryColor: #569b87;
 $secondaryColor: #fcca46;
 
 $color-menu-1: #3d1319;
-$color-menu-2: #c77412;
+
+// Colors menu 2 (3 colors)
+$color-menu-2: #c67412;
+$color-menu-2b: #a56799;
+$color-menu-2t: #6b30eb;
+
+
 $color-menu-3: #0887fb;
 $color-menu-4: #72bf56;
 
 .bgc-menu-1 {
     background: #fcdfdb;
 }
+
+// Breakpoints Responsive
+$breakpoint_desktop: 1250px;
+$breakpoint_tablets: 770px;
+$breakpoint_mobiles: 500px;

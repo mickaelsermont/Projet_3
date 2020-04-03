@@ -10,6 +10,8 @@
         align-items: center;
         text-align: center;
 
+        
+        min-height: 500px;
         height: 95%;
         padding: 15px;
         border-radius: 3px;
@@ -53,7 +55,7 @@
     font-size: $font_size_title;
     font-family: $font_title_francaise;
 
-    background: -webkit-linear-gradient(-45deg, #c77412 10%, #a6669a 60%, #6b30eb 80%);
+    background: -webkit-linear-gradient(-45deg, $color-menu-2 10%, $color-menu-2b 60%, $color-menu-2t 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
