@@ -115,8 +115,9 @@
     display: flex;
 
     #soon__box {
-        width: 14%;
+        width: 30%;
         margin: auto;
+        padding: 0 20px;
         
         color: $secondaryColor;
         background-color: $primaryColor;
@@ -129,8 +130,6 @@
         text-align: center;
         
         #loading {
-            // margin: 10px;
-
             .dot {
                 display:inline-block;
                 width:12px;
@@ -141,13 +140,18 @@
             }
         
         }
-    }
 
+        // Media queries
+        @media screen and (max-width: $breakpoint_desktop) {
+            width: auto;
+            margin-bottom: 100px;
+        }
+    }
 }
 
 #loading span {
     animation-name: blink;
-    animation-duration: 1.4s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
 }

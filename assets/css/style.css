@@ -58,6 +58,22 @@ header .header__link img {
   }
 }
 
+#mentions_container {
+  width: 65%;
+  margin: auto;
+  padding-bottom: 6%;
+}
+@media screen and (max-width: 1250px) {
+  #mentions_container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 770px) {
+  #mentions_container {
+    width: 90%;
+  }
+}
+
 footer {
   position: fixed;
   left: 0;
@@ -79,6 +95,50 @@ footer div .footer__link {
   font-family: "Nunito", sans-serif;
   text-decoration: none;
   color: #fcca46;
+}
+
+@-webkit-keyframes shakelinks {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.shake__link:hover,
+.shake__link:focus {
+  -webkit-animation-name: shakelinks;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
 }
 
 .container__title {
@@ -230,8 +290,9 @@ footer div .footer__link {
   display: flex;
 }
 #soon #soon__box {
-  width: 14%;
+  width: 30%;
   margin: auto;
+  padding: 0 20px;
   color: #fcca46;
   background-color: #569b87;
   border-radius: 5px;
@@ -249,10 +310,16 @@ footer div .footer__link {
   margin-right: 3px;
   background: #fcca46;
 }
+@media screen and (max-width: 1250px) {
+  #soon #soon__box {
+    width: auto;
+    margin-bottom: 100px;
+  }
+}
 
 #loading span {
   animation-name: blink;
-  animation-duration: 1.4s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
@@ -398,6 +465,15 @@ footer div .footer__link {
 }
 .card__m4 .card__line .line__price {
   font-size: 1.6rem;
+}
+
+#mentions {
+  margin-bottom: 3em;
+}
+#mentions p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
