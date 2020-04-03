@@ -71,6 +71,42 @@ footer div .footer__link {
   color: #fcca46;
 }
 
+.container__title {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+.menu__card {
+  padding: 1em 6em 4em 6em;
+  margin-bottom: 10%;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.55);
+  text-align: center;
+}
+.menu__card .card__separation {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__card .card__separation .separation__title {
+  font-size: 1.8rem;
+}
+.menu__card .card__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__card .card__line p {
+  margin-top: 0;
+}
+.menu__card .card__line .line__description {
+  font-weight: 400;
+}
+.menu__card .card__line .line__price {
+  font-weight: 600;
+}
+
 .link__menu {
   text-decoration: none;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.55);
@@ -176,40 +212,92 @@ footer div .footer__link {
   margin: 10px;
 }
 
-.container__title {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-}
-
-.menu__card {
-  padding: 1em 6em;
+.card__m1 {
   color: #3d1319;
   font-family: "Kalam", cursive;
-  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.55);
 }
-.menu__card .card__title {
-  text-align: center;
-  font-size: 2.5rem;
+.card__m1 .card__img {
+  width: 120px;
+  height: 120px;
+}
+.card__m1 .card__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 2.6rem;
   font-family: "Devonshire", cursive;
 }
-.menu__card .card__separation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.card__m1 .card__line .line__description {
+  font-size: 1.3rem;
 }
-.menu__card .card__line {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.card__m1 .card__line .line__price {
+  font-size: 1.3rem;
 }
-.menu__card .card__line .line__description {
-  font-size: 1.4rem;
+
+.card__m2 {
+  color: #3d1319;
+  font-family: "Kalam", cursive;
+}
+.card__m2 .card__img {
+  width: 120px;
+  height: 120px;
+}
+.card__m2 .card__title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
+  font-size: 2.6rem;
+  font-family: "Devonshire", cursive;
 }
-.menu__card .card__line .line__price {
-  font-size: 1.4rem;
-  font-weight: 600;
+.card__m2 .card__line .line__description {
+  font-size: 1.3rem;
+}
+.card__m2 .card__line .line__price {
+  font-size: 1.3rem;
+}
+
+.card__m3 {
+  color: #3d1319;
+  font-family: "Kalam", cursive;
+}
+.card__m3 .card__img {
+  width: 120px;
+  height: 120px;
+}
+.card__m3 .card__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 2.6rem;
+  font-family: "Devonshire", cursive;
+}
+.card__m3 .card__line .line__description {
+  font-size: 1.3rem;
+}
+.card__m3 .card__line .line__price {
+  font-size: 1.3rem;
+}
+
+.card__m4 {
+  color: #3d1319;
+  font-family: "Kalam", cursive;
+}
+.card__m4 .card__img {
+  width: 120px;
+  height: 120px;
+}
+.card__m4 .card__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 2.6rem;
+  font-family: "Devonshire", cursive;
+}
+.card__m4 .card__line .line__description {
+  font-size: 1.3rem;
+}
+.card__m4 .card__line .line__price {
+  font-size: 1.3rem;
 }
 
 body {

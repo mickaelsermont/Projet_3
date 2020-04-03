@@ -1,0 +1,105 @@
+$font_size_line_m1: 1.3rem;
+
+// Card menu 1 : La note enchantée
+.card__m1 {
+    color: $color-menu-1;
+    font-family: $font_menu_1;
+
+    .card__img {
+        width: 120px;
+        height: 120px;
+    }
+    .card__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 2.6rem;
+        font-family: $font_title_enchantee;
+    }
+    .card__line {
+        .line__description {
+            font-size: $font_size_line_m1;
+        }
+        .line__price {
+            font-size: $font_size_line_m1;
+        }
+    }
+}
+
+// Card menu 2 : Le chic à la française
+.card__m2 {
+    color: $color-menu-1;
+    font-family: $font_menu_1;
+
+    .card__img {
+        width: 120px;
+        height: 120px;
+    }
+    .card__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 2.6rem;
+        font-family: $font_title_enchantee;
+    }
+    .card__line {
+        .line__description {
+            font-size: $font_size_line_m1;
+        }
+        .line__price {
+            font-size: $font_size_line_m1;
+        }
+    }
+}
+
+// Card menu 3 : Le délice des papilles
+.card__m3 {
+    color: $color-menu-1;
+    font-family: $font_menu_1;
+
+    .card__img {
+        width: 120px;
+        height: 120px;
+    }
+    .card__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 2.6rem;
+        font-family: $font_title_enchantee;
+    }
+    .card__line {
+        .line__description {
+            font-size: $font_size_line_m1;
+        }
+        .line__price {
+            font-size: $font_size_line_m1;
+        }
+    }
+}
+
+// Card menu 4 : La palette du goût
+.card__m4 {
+    color: $color-menu-1;
+    font-family: $font_menu_1;
+
+    .card__img {
+        width: 120px;
+        height: 120px;
+    }
+    .card__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 2.6rem;
+        font-family: $font_title_enchantee;
+    }
+    .card__line {
+        .line__description {
+            font-size: $font_size_line_m1;
+        }
+        .line__price {
+            font-size: $font_size_line_m1;
+        }
+    }
+}

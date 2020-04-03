@@ -7,9 +7,12 @@
 @import "layout/_container.scss";
 @import "layout/_footer.scss";
 
+// components
+@import "components/_card_menu.scss";
+
 // pages
 @import "pages/_accueil.scss";
-@import "pages/_enchantee.scss";
+@import "pages/_page_menu.scss";
 
 body {
     margin: 0;
