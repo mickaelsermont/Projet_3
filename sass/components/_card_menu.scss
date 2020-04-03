@@ -20,8 +20,8 @@
         justify-content: space-between;
         align-items: center;
 
-        .separation__title {
-            font-size: 1.8rem;
+        .separation__img {
+            width: 30%;
         }
     }
     .card__line {
@@ -33,9 +33,11 @@
             margin-top: 0;
         }
         .line__description {
+            text-align: start;
             font-weight: 400;
         }
         .line__price {
+            margin-left: 30px;
             font-weight: 600;
         }
     }

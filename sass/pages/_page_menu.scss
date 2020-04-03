@@ -1,4 +1,4 @@
-$font_size_line_m1: 1.5rem;
+$font_size_line_m1: 1.4rem;
 
 // Card menu 1 : La note enchantée
 .card__m1 {
@@ -18,12 +18,15 @@ $font_size_line_m1: 1.5rem;
     }
     .card__line {
         .line__description {
-            text-align: start;
             font-size: $font_size_line_m1;
         }
         .line__price {
-            margin-left: 30px;
             font-size: $font_size_line_m1;
+        }
+    }
+    .card__separation {
+        .separation__title {
+            font-size: 1.8rem;
         }
     }
     .card__footer {
@@ -48,19 +51,40 @@ $font_size_line_m1: 1.5rem;
 
 // Card menu 2 : Le chic à la française
 .card__m2 {
-    color: $color-menu-1;
-    font-family: $font_menu_1;
+    // Font family
+    font-family: $font_menu_francaise;
+    // Color paragraphes
+    .m2__color_1 {
+        color: $color-menu-2;
+    }
+    .m2__color_2 {
+        color: $color-menu-2b;
+    }
+    .m2__color_3 {
+        color: $color-menu-2t;
+    }
 
     .card__img {
         width: 120px;
         height: 120px;
     }
+    .card__separation {
+        font-size: 2em;
+        font-family: $font_menu_francaise;
+
+        .separation__title {
+            font-size: 1.5rem;
+        }
+    }
     .card__title {
         margin-top: 0;
-        margin-bottom: 0;
-        font-weight: 400;
+        margin-bottom: 2em;
         font-size: 2.6rem;
-        font-family: $font_title_enchantee;
+        font-family: $font_title_francaise;
+        
+        background: -webkit-linear-gradient(-45deg, $color-menu-2 10%, $color-menu-2b 60%, $color-menu-2t 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .card__line {
         .line__description {
@@ -74,8 +98,8 @@ $font_size_line_m1: 1.5rem;
 
 // Card menu 3 : Le délice des papilles
 .card__m3 {
-    color: $color-menu-1;
-    font-family: $font_menu_1;
+    color: #000;
+    font-family: $font_menu_2;
 
     .card__img {
         width: 120px;
@@ -83,12 +107,18 @@ $font_size_line_m1: 1.5rem;
     }
     .card__title {
         margin-top: 0;
-        margin-bottom: 0;
-        font-weight: 400;
-        font-size: 2.6rem;
-        font-family: $font_title_enchantee;
+        margin-bottom: 1.5em;
+        font-size: 4rem;
+        font-family: $font_title_papilles;
+
+        background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .card__line {
+        p {
+            padding: 0 3em;
+        }
         .line__description {
             font-size: $font_size_line_m1;
         }
@@ -100,8 +130,8 @@ $font_size_line_m1: 1.5rem;
 
 // Card menu 4 : La palette du goût
 .card__m4 {
-    color: $color-menu-1;
-    font-family: $font_menu_1;
+    color: #000;
+    font-family: $font_menu_2;
 
     .card__img {
         width: 120px;
@@ -109,17 +139,23 @@ $font_size_line_m1: 1.5rem;
     }
     .card__title {
         margin-top: 0;
-        margin-bottom: 0;
-        font-weight: 400;
-        font-size: 2.6rem;
-        font-family: $font_title_enchantee;
+        margin-bottom: 1.5em;
+        font-size: 4rem;
+        font-family: $font_title_gout;
+
+        background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .card__line {
+        p {
+            padding: 0 3em;
+        }
         .line__description {
             font-size: $font_size_line_m1;
         }
         .line__price {
-            font-size: $font_size_line_m1;
+            font-size: $font_size_line_m1 + 0.2rem;
         }
     }
 }

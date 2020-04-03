@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam&family=Devonshire&family=Itim&family=Kaushan+Script&family=Kurale&family=Nunito&family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Kalam&family=Devonshire&family=Itim&family=Kaushan+Script&family=Kurale&family=Nunito&family=Source+Serif+Pro&display=swap");
 .bgc-menu-1 {
   background: #fcdfdb;
 }
@@ -100,8 +100,8 @@ footer div .footer__link {
   justify-content: space-between;
   align-items: center;
 }
-.menu__card .card__separation .separation__title {
-  font-size: 1.8rem;
+.menu__card .card__separation .separation__img {
+  width: 30%;
 }
 .menu__card .card__line {
   display: flex;
@@ -112,9 +112,11 @@ footer div .footer__link {
   margin-top: 0;
 }
 .menu__card .card__line .line__description {
+  text-align: start;
   font-weight: 400;
 }
 .menu__card .card__line .line__price {
+  margin-left: 30px;
   font-weight: 600;
 }
 @media screen and (max-width: 1250px) {
@@ -138,6 +140,7 @@ footer div .footer__link {
   padding: 15px;
   border-radius: 3px;
   background-color: transparent;
+  opacity: 1;
   transform: scale(1);
   transition: transform 400ms;
 }
@@ -150,6 +153,7 @@ footer div .footer__link {
 }
 .link__menu .menu:hover {
   transform: scale(1.15);
+  opacity: 0.8;
 }
 
 /* ------ Menu titles ------- */
@@ -199,7 +203,7 @@ footer div .footer__link {
   font-weight: 500;
   font-size: 2em;
   font-family: "Kaushan Script", cursive;
-  background: -webkit-linear-gradient(-45deg, #55924d 10%, #84cd60 60%, #beff7f 80%);
+  background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -210,6 +214,17 @@ footer div .footer__link {
   color: #72bf56;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
 #soon {
   margin-top: 30px;
   display: flex;
@@ -222,11 +237,32 @@ footer div .footer__link {
   border-radius: 5px;
   font-size: 21px;
   font-family: "Nunito", sans-serif;
+  font-weight: 600;
   justify-content: center;
   text-align: center;
 }
-#soon #soon__box p {
-  margin: 10px;
+#soon #soon__box #loading .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 3px;
+  background: #fcca46;
+}
+
+#loading span {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+#loading span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+#loading span:nth-child(3) {
+  animation-delay: 0.4s;
 }
 
 .card__m1 {
@@ -245,12 +281,13 @@ footer div .footer__link {
   font-family: "Devonshire", cursive;
 }
 .card__m1 .card__line .line__description {
-  text-align: start;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .card__m1 .card__line .line__price {
-  margin-left: 30px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+.card__m1 .card__separation .separation__title {
+  font-size: 1.8rem;
 }
 .card__m1 .card__footer {
   display: flex;
@@ -271,30 +308,47 @@ footer div .footer__link {
 }
 
 .card__m2 {
-  color: #3d1319;
-  font-family: "Kalam", cursive;
+  font-family: "Source Serif Pro", serif;
+}
+.card__m2 .m2__color_1 {
+  color: #c67412;
+}
+.card__m2 .m2__color_2 {
+  color: #a56799;
+}
+.card__m2 .m2__color_3 {
+  color: #6b30eb;
 }
 .card__m2 .card__img {
   width: 120px;
   height: 120px;
 }
+.card__m2 .card__separation {
+  font-size: 2em;
+  font-family: "Source Serif Pro", serif;
+}
+.card__m2 .card__separation .separation__title {
+  font-size: 1.5rem;
+}
 .card__m2 .card__title {
   margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
+  margin-bottom: 2em;
   font-size: 2.6rem;
-  font-family: "Devonshire", cursive;
+  font-family: "Kurale", serif;
+  background: -webkit-linear-gradient(-45deg, #c67412 10%, #a56799 60%, #6b30eb 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .card__m2 .card__line .line__description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .card__m2 .card__line .line__price {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .card__m3 {
-  color: #3d1319;
-  font-family: "Kalam", cursive;
+  color: #000;
+  font-family: "Indie Flower";
 }
 .card__m3 .card__img {
   width: 120px;
@@ -302,21 +356,26 @@ footer div .footer__link {
 }
 .card__m3 .card__title {
   margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 2.6rem;
-  font-family: "Devonshire", cursive;
+  margin-bottom: 1.5em;
+  font-size: 4rem;
+  font-family: "Dancing Script", cursive;
+  background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card__m3 .card__line p {
+  padding: 0 3em;
 }
 .card__m3 .card__line .line__description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .card__m3 .card__line .line__price {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .card__m4 {
-  color: #3d1319;
-  font-family: "Kalam", cursive;
+  color: #000;
+  font-family: "Indie Flower";
 }
 .card__m4 .card__img {
   width: 120px;
@@ -324,16 +383,21 @@ footer div .footer__link {
 }
 .card__m4 .card__title {
   margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 2.6rem;
-  font-family: "Devonshire", cursive;
+  margin-bottom: 1.5em;
+  font-size: 4rem;
+  font-family: "Kaushan Script", cursive;
+  background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card__m4 .card__line p {
+  padding: 0 3em;
 }
 .card__m4 .card__line .line__description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .card__m4 .card__line .line__price {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 body {

@@ -25,10 +25,12 @@
             margin-top: -4em;
         }
 
+        opacity: 1;
         transform: scale(1);
         transition: transform 400ms;
         &:hover {
             transform: scale(1.15);
+            opacity: 0.8;
         }
     }
 }
@@ -85,7 +87,7 @@
     font-size: $font_size_title;
     font-family: $font_title_gout;
 
-    background: -webkit-linear-gradient(-45deg, #55924d 10%, #84cd60 60%, #beff7f 80%);
+    background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -93,6 +95,18 @@
     font-style: italic;
     font-family: $font_menu_gout;
     color: $color-menu-4;
+}
+
+@keyframes blink {
+    0% {
+      opacity: .2;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: .2;
+    }
 }
 
 // Section Prochainement
@@ -110,14 +124,36 @@
 
         font-size: 21px;
         font-family: $font_link_footer;
-        // font-weight: 500;
+        font-weight: 600;
         justify-content: center;
         text-align: center;
         
-        p {
-            margin: 10px;
-        }
+        #loading {
+            // margin: 10px;
 
+            .dot {
+                display:inline-block;
+                width:12px;
+                height:12px;
+                border-radius:50%;
+                margin-right:3px;
+                background:$secondaryColor;
+            }
+        
+        }
     }
 
+}
+
+#loading span {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+#loading span:nth-child(2) {
+    animation-delay: .2s;
+}
+#loading span:nth-child(3) {
+    animation-delay: .4s;
 }
