@@ -1,4 +1,4 @@
-
+// Container homepage
 #main_container {
     margin: 20px 30px;
     min-height: 65%;
@@ -8,3 +8,10 @@
     grid-gap: 1rem;
 }
 
+// Container for to show menu
+#menu_container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+}

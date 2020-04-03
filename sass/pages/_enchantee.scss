@@ -1,0 +1,39 @@
+$font_size_line: 1.4rem;
+
+.container__title {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+.menu__card {
+    padding: 1em 6em;
+    color: $color-menu-1;
+    font-family: $font_menu_1;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.55);
+
+    .card__title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: $font_title_enchantee;
+
+    }
+    .card__separation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card__line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .line__description {
+            font-size: $font_size_line;
+            font-weight: 400;
+        }
+        .line__price {
+            font-size: $font_size_line;
+            font-weight: 600;
+        }
+    }
+}
