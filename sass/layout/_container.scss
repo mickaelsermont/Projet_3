@@ -6,6 +6,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     grid-gap: 1rem;
+
+    // Media queries
+    @media screen and (max-width: $breakpoint_tablets) {
+        margin: 20px 5px;
+    }
 }
 
 // Container for to show menu
@@ -20,7 +25,7 @@
         width: 85%;
     }
     @media screen and (max-width: $breakpoint_tablets) {
-        width: 90%;
+        width: 98%;
     }
 }
 

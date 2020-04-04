@@ -9,7 +9,16 @@ header {
         text-decoration: none;
 
         img {
-            width: 250px;
+            width: 240px;
+
+            // Media queries
+            @media screen and (max-width: $breakpoint_desktop) {
+                width: 210px;
+            }
+            @media screen and (max-width: $breakpoint_tablets) {
+                width: 190px;
+            }
         }
     }
+
 }

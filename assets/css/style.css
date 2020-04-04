@@ -30,7 +30,17 @@ header .header__link {
   text-decoration: none;
 }
 header .header__link img {
-  width: 250px;
+  width: 240px;
+}
+@media screen and (max-width: 1250px) {
+  header .header__link img {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 770px) {
+  header .header__link img {
+    width: 190px;
+  }
 }
 
 #main_container {
@@ -39,6 +49,11 @@ header .header__link img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   grid-gap: 1rem;
+}
+@media screen and (max-width: 770px) {
+  #main_container {
+    margin: 20px 5px;
+  }
 }
 
 #menu_container {
@@ -54,7 +69,7 @@ header .header__link img {
 }
 @media screen and (max-width: 770px) {
   #menu_container {
-    width: 90%;
+    width: 98%;
   }
 }
 
@@ -95,6 +110,14 @@ footer div .footer__link {
   font-family: "Nunito", sans-serif;
   text-decoration: none;
   color: #fcca46;
+}
+@media screen and (max-width: 770px) {
+  footer div {
+    padding: 0 5px;
+  }
+  footer div .footer__link {
+    font-size: 17px;
+  }
 }
 
 @-webkit-keyframes shakelinks {
@@ -182,6 +205,11 @@ footer div .footer__link {
 @media screen and (max-width: 1250px) {
   .menu__card {
     padding: 1em 2em 4em;
+  }
+}
+@media screen and (max-width: 770px) {
+  .menu__card {
+    padding: 1em 1em 4em;
   }
 }
 
@@ -290,7 +318,7 @@ footer div .footer__link {
   display: flex;
 }
 #soon #soon__box {
-  width: 30%;
+  width: 20%;
   margin: auto;
   padding: 0 20px;
   color: #fcca46;
@@ -347,9 +375,7 @@ footer div .footer__link {
   font-size: 2.6rem;
   font-family: "Devonshire", cursive;
 }
-.card__m1 .card__line .line__description {
-  font-size: 1.4rem;
-}
+.card__m1 .card__line .line__description,
 .card__m1 .card__line .line__price {
   font-size: 1.4rem;
 }
@@ -406,9 +432,7 @@ footer div .footer__link {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card__m2 .card__line .line__description {
-  font-size: 1.4rem;
-}
+.card__m2 .card__line .line__description,
 .card__m2 .card__line .line__price {
   font-size: 1.4rem;
 }
@@ -433,9 +457,7 @@ footer div .footer__link {
 .card__m3 .card__line p {
   padding: 0 3em;
 }
-.card__m3 .card__line .line__description {
-  font-size: 1.4rem;
-}
+.card__m3 .card__line .line__description,
 .card__m3 .card__line .line__price {
   font-size: 1.4rem;
 }

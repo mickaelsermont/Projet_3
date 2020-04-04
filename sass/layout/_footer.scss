@@ -20,6 +20,14 @@ footer {
             text-decoration: none;
             color: $secondaryColor;
         }
+
+        @media screen and (max-width: $breakpoint_tablets) {
+            padding: 0 5px;
+
+            .footer__link {
+                font-size: 17px;
+            }
+        }
     }
 }
 

@@ -115,7 +115,7 @@
     display: flex;
 
     #soon__box {
-        width: 30%;
+        width: 20%;
         margin: auto;
         padding: 0 20px;
         
@@ -149,6 +149,7 @@
     }
 }
 
+// Animation 
 #loading span {
     animation-name: blink;
     animation-duration: 1.5s;

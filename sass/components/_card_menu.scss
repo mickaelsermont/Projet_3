@@ -46,4 +46,7 @@
     @media screen and (max-width: $breakpoint_desktop) {
         padding: 1em 2em 4em;
     }
+    @media screen and (max-width: $breakpoint_tablets) {
+        padding: 1em 1em 4em;
+    }
 }

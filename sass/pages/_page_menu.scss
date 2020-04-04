@@ -17,9 +17,7 @@ $font_size_line_m1: 1.4rem;
         font-family: $font_title_enchantee;
     }
     .card__line {
-        .line__description {
-            font-size: $font_size_line_m1;
-        }
+        .line__description,
         .line__price {
             font-size: $font_size_line_m1;
         }
@@ -87,9 +85,7 @@ $font_size_line_m1: 1.4rem;
         -webkit-text-fill-color: transparent;
     }
     .card__line {
-        .line__description {
-            font-size: $font_size_line_m1;
-        }
+        .line__description,
         .line__price {
             font-size: $font_size_line_m1;
         }
@@ -119,9 +115,7 @@ $font_size_line_m1: 1.4rem;
         p {
             padding: 0 3em;
         }
-        .line__description {
-            font-size: $font_size_line_m1;
-        }
+        .line__description,
         .line__price {
             font-size: $font_size_line_m1;
         }
@@ -159,3 +153,4 @@ $font_size_line_m1: 1.4rem;
         }
     }
 }
+
