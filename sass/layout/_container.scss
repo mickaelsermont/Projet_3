@@ -9,7 +9,7 @@
 
     // Media queries
     @media screen and (max-width: $breakpoint_tablets) {
-        margin: 20px 5px;
+        margin: 20px 15px;
     }
 }
 
@@ -25,7 +25,8 @@
         width: 85%;
     }
     @media screen and (max-width: $breakpoint_tablets) {
-        width: 98%;
+        width: 96%;
+        margin-bottom: 10%;
     }
 }
 

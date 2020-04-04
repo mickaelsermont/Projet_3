@@ -24,7 +24,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #569b87;
-  height: 10%;
+  height: 90px;
 }
 header .header__link {
   text-decoration: none;
@@ -52,7 +52,7 @@ header .header__link img {
 }
 @media screen and (max-width: 770px) {
   #main_container {
-    margin: 20px 5px;
+    margin: 20px 15px;
   }
 }
 
@@ -69,7 +69,8 @@ header .header__link img {
 }
 @media screen and (max-width: 770px) {
   #menu_container {
-    width: 98%;
+    width: 96%;
+    margin-bottom: 10%;
   }
 }
 
@@ -169,11 +170,15 @@ footer div .footer__link {
   font-family: Helvetica, sans-serif;
   text-align: center;
 }
+@media screen and (max-width: 770px) {
+  .container__title {
+    font-size: 1.7em;
+  }
+}
 
 .menu__card {
   padding: 4em 6em;
   margin-bottom: 10%;
-  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.55);
   text-align: center;
 }
 .menu__card .card__separation {
@@ -228,7 +233,6 @@ footer div .footer__link {
 
 .link__menu {
   text-decoration: none;
-  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.55);
 }
 .link__menu .menu {
   display: flex;
@@ -249,12 +253,23 @@ footer div .footer__link {
   font-size: 2.1em;
 }
 .link__menu .menu .img_note {
-  width: 80;
+  width: 80px;
   margin-top: -4em;
 }
 .link__menu .menu:hover {
   transform: scale(1.15);
   opacity: 0.8;
+}
+@media screen and (max-width: 770px) {
+  .link__menu .menu:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 770px) {
+  .link__menu {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.55);
+  }
 }
 
 /* ------ Menu titles ------- */
@@ -333,15 +348,17 @@ footer div .footer__link {
 #soon #soon__box {
   width: 20%;
   margin: auto;
-  padding: 0 20px;
   color: #fcca46;
   background-color: #569b87;
   border-radius: 5px;
-  font-size: 21px;
+  font-size: 24px;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   justify-content: center;
   text-align: center;
+}
+#soon #soon__box #loading {
+  margin: 0.4em;
 }
 #soon #soon__box #loading .dot {
   display: inline-block;
@@ -376,6 +393,7 @@ footer div .footer__link {
 .card__m1 {
   color: #3d1319;
   font-family: "Kalam", cursive;
+  border-radius: 3px;
 }
 .card__m1 .card__img {
   width: 120px;
@@ -425,16 +443,16 @@ footer div .footer__link {
 .card__m2 .m2__color_3 {
   color: #6b30eb;
 }
-.card__m2 .card__img {
-  width: 120px;
-  height: 120px;
-}
 .card__m2 .card__separation {
-  font-size: 2em;
   font-family: "Source Serif Pro", serif;
 }
 .card__m2 .card__separation .separation__title {
   font-size: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  .card__m2 .card__separation .separation__title {
+    font-size: 1.2rem;
+  }
 }
 .card__m2 .card__title {
   margin-top: 0;
@@ -445,18 +463,26 @@ footer div .footer__link {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 770px) {
+  .card__m2 .card__title {
+    margin-top: 1em;
+    font-size: 2.3rem;
+  }
+}
 .card__m2 .card__line .line__description,
 .card__m2 .card__line .line__price {
   font-size: 1.4rem;
+}
+@media screen and (max-width: 770px) {
+  .card__m2 .card__line .line__description,
+.card__m2 .card__line .line__price {
+    font-size: 1.2rem;
+  }
 }
 
 .card__m3 {
   color: #000;
   font-family: "Indie Flower";
-}
-.card__m3 .card__img {
-  width: 120px;
-  height: 120px;
 }
 .card__m3 .card__title {
   margin-top: 0;
@@ -467,8 +493,10 @@ footer div .footer__link {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card__m3 .card__line p {
-  padding: 0 3em;
+@media screen and (max-width: 770px) {
+  .card__m3 .card__title {
+    font-size: 2.5rem;
+  }
 }
 .card__m3 .card__line .line__description,
 .card__m3 .card__line .line__price {
@@ -479,10 +507,6 @@ footer div .footer__link {
   color: #000;
   font-family: "Indie Flower";
 }
-.card__m4 .card__img {
-  width: 120px;
-  height: 120px;
-}
 .card__m4 .card__title {
   margin-top: 0;
   margin-bottom: 1.5em;
@@ -492,8 +516,10 @@ footer div .footer__link {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card__m4 .card__line p {
-  padding: 0 3em;
+@media screen and (max-width: 770px) {
+  .card__m4 .card__title {
+    font-size: 2.5rem;
+  }
 }
 .card__m4 .card__line .line__description {
   font-size: 1.4rem;
@@ -514,6 +540,7 @@ footer div .footer__link {
 body {
   margin: 0;
   padding: 0;
+  min-height: 800px;
   background-color: #fff;
 }
 

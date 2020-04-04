@@ -4,6 +4,7 @@ $font_size_line_m1: 1.4rem;
 .card__m1 {
     color: $color-menu-1;
     font-family: $font_menu_1;
+    border-radius: 3px;
 
     .card__img {
         width: 120px;
@@ -62,16 +63,16 @@ $font_size_line_m1: 1.4rem;
         color: $color-menu-2t;
     }
 
-    .card__img {
-        width: 120px;
-        height: 120px;
-    }
     .card__separation {
-        font-size: 2em;
         font-family: $font_menu_francaise;
 
         .separation__title {
             font-size: 1.5rem;
+
+            // Media query
+            @media screen and (max-width: $breakpoint_mobiles) {
+                font-size: $font_size_line_m1 - 0.2rem;
+            }
         }
     }
     .card__title {
@@ -83,11 +84,22 @@ $font_size_line_m1: 1.4rem;
         background: -webkit-linear-gradient(-45deg, $color-menu-2 10%, $color-menu-2b 60%, $color-menu-2t 80%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        // Media query
+        @media screen and (max-width: $breakpoint_tablets) {
+            margin-top: 1em;
+            font-size: 2.3rem;
+        }
     }
     .card__line {
         .line__description,
         .line__price {
             font-size: $font_size_line_m1;
+
+            // Media query
+            @media screen and (max-width: $breakpoint_tablets) {
+                font-size: $font_size_line_m1 - 0.2rem;
+            }
         }
     }
 }
@@ -97,10 +109,6 @@ $font_size_line_m1: 1.4rem;
     color: #000;
     font-family: $font_menu_2;
 
-    .card__img {
-        width: 120px;
-        height: 120px;
-    }
     .card__title {
         margin-top: 0;
         margin-bottom: 1.5em;
@@ -110,11 +118,13 @@ $font_size_line_m1: 1.4rem;
         background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        // Media query
+        @media screen and (max-width: $breakpoint_tablets) {
+            font-size: 2.5rem;
+        }
     }
     .card__line {
-        p {
-            padding: 0 3em;
-        }
         .line__description,
         .line__price {
             font-size: $font_size_line_m1;
@@ -127,10 +137,6 @@ $font_size_line_m1: 1.4rem;
     color: #000;
     font-family: $font_menu_2;
 
-    .card__img {
-        width: 120px;
-        height: 120px;
-    }
     .card__title {
         margin-top: 0;
         margin-bottom: 1.5em;
@@ -140,11 +146,13 @@ $font_size_line_m1: 1.4rem;
         background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        // Media query
+        @media screen and (max-width: $breakpoint_tablets) {
+            font-size: 2.5rem;
+        }
     }
     .card__line {
-        p {
-            padding: 0 3em;
-        }
         .line__description {
             font-size: $font_size_line_m1;
         }
