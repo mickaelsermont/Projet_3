@@ -81,6 +81,7 @@
 
 // Menu "Le délice des papilles"
 .menu__title-3 {
+    padding-left: 5px; // Car la font utilisé est couper à gauche
     font-size: $font_size_title;
     font-family: $font_title_papilles;
 
