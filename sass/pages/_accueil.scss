@@ -1,7 +1,7 @@
 // Section Menu
 .link__menu {
     text-decoration: none;
-    // box-shadow: 0 1px 6px 0 rgba(32,33,36,0.55);
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.35);
 
     .menu {
         display: flex;
@@ -33,7 +33,7 @@
             opacity: 0.8;
         }
 
-        @media screen and (max-width: $breakpoint_tablets) {
+        @media screen and (max-width: $breakpoint_desktop) {
             &:hover {
                 transform: scale(1.05);  // Je baisse le zoom car sinon il y a un problème avec la largeur sur mobile
                 opacity: 0.8;
@@ -41,8 +41,8 @@
         }
     }
 
-    @media screen and (max-width: $breakpoint_tablets) {
-        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.55);
+    @media screen and (max-width: 640px) {
+        margin: 0 15px;
     }
 }
 
@@ -111,15 +111,37 @@
     color: $color-menu-4;
 }
 
+/* Background colors */
+.bgc-menu-1 {
+    background: $bg-color-menu-1;
+}
+.bgc-menu-2 {
+    background: $bg-color-menu-2;
+}
+.bgc-menu-3 {
+    background: $bg-color-menu-3;
+}
+.bgc-menu-4 {
+    background: $bg-color-menu-4;
+}
+
+/* Animations CSS */
+
 @keyframes blink {
     0% {
-      opacity: .2;
+        opacity: 0;
     }
     20% {
-      opacity: 1;
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.2;
     }
     100% {
-      opacity: .2;
+        opacity: 0;
     }
 }
 
@@ -131,6 +153,7 @@
     #soon__box {
         width: 20%;
         margin: auto;
+        margin-bottom: 100px;
         
         color: $secondaryColor;
         background-color: $primaryColor;
@@ -159,7 +182,6 @@
         // Media queries
         @media screen and (max-width: $breakpoint_desktop) {
             width: auto;
-            margin-bottom: 100px;
         }
     }
 }

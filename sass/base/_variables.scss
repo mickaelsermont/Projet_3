@@ -12,9 +12,11 @@ $color-menu-2t: #6b30eb;
 $color-menu-3: #0887fb;
 $color-menu-4: #72bf56;
 
-.bgc-menu-1 {
-    background: #fcdfdb;
-}
+$bg-color-menu-1: rgb(252,223,219);
+$bg-color-menu-2: rgb(255,245,254);
+$bg-color-menu-3: rgb(238,240,240);
+$bg-color-menu-4: rgb(253,255,253);
+
 
 // Breakpoints Responsive
 $breakpoint_desktop: 1250px;

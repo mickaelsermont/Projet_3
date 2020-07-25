@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Kalam&family=Devonshire&family=Itim&family=Kaushan+Script&family=Kurale&family=Nunito&family=Source+Serif+Pro&display=swap");
-.bgc-menu-1 {
-  background: #fcdfdb;
-}
-
 @font-face {
   font-family: "PeacerfulDay";
   src: url("../../assets/fonts/PeacerfulDay.woff2") format("woff2"), url("../../assets/fonts/PeacerfulDay.woff") format("woff");
@@ -44,15 +40,21 @@ header .header__link img {
 }
 
 #main_container {
-  margin: 20px 30px;
   min-height: 65%;
+  margin: 20px auto;
+  width: 55%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   grid-gap: 1rem;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1100px) {
   #main_container {
-    margin: 20px 15px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 875px) {
+  #main_container {
+    width: 100%;
   }
 }
 
@@ -179,6 +181,7 @@ footer div .footer__link {
 .menu__card {
   padding: 4em 6em;
   margin-bottom: 10%;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.35);
   text-align: center;
 }
 .menu__card .card__separation {
@@ -233,6 +236,7 @@ footer div .footer__link {
 
 .link__menu {
   text-decoration: none;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.35);
 }
 .link__menu .menu {
   display: flex;
@@ -260,15 +264,15 @@ footer div .footer__link {
   transform: scale(1.15);
   opacity: 0.8;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1250px) {
   .link__menu .menu:hover {
     transform: scale(1.05);
     opacity: 0.8;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 640px) {
   .link__menu {
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.55);
+    margin: 0 15px;
   }
 }
 
@@ -302,6 +306,7 @@ footer div .footer__link {
 }
 
 .menu__title-3 {
+  padding-left: 5px;
   font-size: 2em;
   font-family: "Dancing Script", cursive;
   background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
@@ -330,15 +335,39 @@ footer div .footer__link {
   color: #72bf56;
 }
 
+/* Background colors */
+.bgc-menu-1 {
+  background: #fcdfdb;
+}
+
+.bgc-menu-2 {
+  background: #fff5fe;
+}
+
+.bgc-menu-3 {
+  background: #eef0f0;
+}
+
+.bgc-menu-4 {
+  background: #fdfffd;
+}
+
+/* Animations CSS */
 @keyframes blink {
   0% {
-    opacity: 0.2;
+    opacity: 0;
   }
   20% {
+    opacity: 0.2;
+  }
+  50% {
     opacity: 1;
   }
-  100% {
+  80% {
     opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
   }
 }
 #soon {
@@ -348,6 +377,7 @@ footer div .footer__link {
 #soon #soon__box {
   width: 20%;
   margin: auto;
+  margin-bottom: 100px;
   color: #fcca46;
   background-color: #569b87;
   border-radius: 15px;
@@ -371,7 +401,6 @@ footer div .footer__link {
 @media screen and (max-width: 1250px) {
   #soon #soon__box {
     width: auto;
-    margin-bottom: 100px;
   }
 }
 
